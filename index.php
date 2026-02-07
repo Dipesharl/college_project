@@ -5,7 +5,7 @@ require_once 'includes/functions.php';
 $featuredPost = getFeaturedPost($conn);
 
 // Get latest posts (excluding featured)
-$posts = getPosts($conn, 4, 0);
+$posts = getPosts($conn, 12, 0);
 
 // Get categories
 $categories = getCategories($conn);
