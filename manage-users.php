@@ -94,7 +94,7 @@ $users = $conn->query("SELECT id, username, email, full_name, role, created_at
                                              padding: 0.3rem 0.8rem; border-radius: var(--card-border-radius-2); font-size: 0.85rem;">
                                     <?php echo strtoupper($user['role']); ?>
                                 </span>
-                            </td>
+                            </td>            
                             <td><?php echo date('M j, Y', strtotime($user['created_at'])); ?></td>
                             <td>
                                 <?php if ($user['id'] != $_SESSION['user_id']): ?>

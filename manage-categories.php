@@ -96,7 +96,7 @@ $categories = $conn->query("SELECT c.*, COUNT(p.id) as post_count
                     <h3 style="margin-bottom: 1rem;">Add New Category</h3>
                     <form action="" method="POST" style="display: flex; gap: 1rem;">
                         <input type="text" name="category_name" placeholder="Category Name" required
-                               style="flex: 1; padding: 0.8rem; background: var(--color-bg); border-radius: var(--card-border-radius-2); color: var(--color-white);">
+                               style="flex: 1; padding: 0.8rem; background: var(--color-bg); border-radius: var(--card-border-radius-2); color: var(--color-gray-900);">
                         <button type="submit" name="add_category" class="btn">Add Category</button>
                     </form>
                 </div>

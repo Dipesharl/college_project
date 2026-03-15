@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
                     <input type="checkbox" name="is_featured" id="is_featured" value="1"
                            <?php echo (isset($_POST['is_featured']) && $_POST['is_featured']) ? 'checked' : ''; ?>>
-                    <label for="is_featured" style="color: var(--color-white); cursor: pointer;">
+                    <label for="is_featured" style="color: var(--color-gray-700); cursor: pointer;">
                         Set as Featured Post <small style="color: var(--color-gray-200);">(will replace current featured post)</small>
                     </label>
                 </div>
