@@ -165,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="text" name="full_name" placeholder="Full Name" required 
                        value="<?php echo htmlspecialchars($user['full_name']); ?>">
                 
-                <label for="profile_image" style="color: var(--color-white); margin-bottom: 0.5rem; display: block;">
+                <label for="profile_image" style="color: var(--color-black); margin-bottom: 0.5rem; display: block;">
                     Profile Picture
                 </label>
                 <input type="file" name="profile_image" id="profile_image" accept="image/*" onchange="previewImage(event)">

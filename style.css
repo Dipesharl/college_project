@@ -67,8 +67,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--color-bg);
-    color: var(--color-gray-200);
-    font-size: 0.9rem;
+    color: var(--color-gray-900);
+    font-size: 1rem;
     line-height: 1.6;
     /* Removed overflow-x: hidden — it breaks position:sticky and can cause layout bugs.
        Fix horizontal overflow at the source instead. */
@@ -178,12 +178,12 @@ nav button {
 
 .nav_logo {
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--color-gray-900);
 }
 
 .nav_items {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -236,7 +236,7 @@ nav button {
     padding: 0.5rem 1rem;
     border-radius: var(--card-border-radius-2);
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     text-align: center;
     white-space: nowrap;
     flex-shrink: 0;
@@ -352,6 +352,10 @@ nav button {
     place-items: center;
     /* Fixed: 100dvh accounts for mobile browser chrome (address bar) correctly */
     height: 100dvh;
+     min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
 }
 
 .form_section_container {
@@ -400,7 +404,7 @@ input[type="checkbox"] {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: var(--color--gray-900);
+    background: var(--color-white);
     border: 2px solid var(--color-gray-300);
     border-radius: var(--card-border-radius-2);
     margin-top: 0.5rem;

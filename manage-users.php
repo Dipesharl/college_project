@@ -90,8 +90,8 @@ $users = $conn->query("SELECT id, username, email, full_name, role, created_at
                             <td><?php echo htmlspecialchars($user['full_name']); ?></td>
                             <td><?php echo htmlspecialchars($user['email']); ?></td>
                             <td>
-                                <span style="background: <?php echo $user['role'] === 'admin' ? 'var(--color-primary)' : 'var(--color-gray-700)'; ?>; 
-                                             padding: 0.3rem 0.8rem; border-radius: var(--card-border-radius-2); font-size: 0.85rem;">
+                                <span style="background: <?php echo $user['role'] === 'admin' ? 'var(--color-primary)' : 'var(--color-gray-700)';?>; 
+                                             padding: 0.3rem 0.8rem; border-radius: var(--card-border-radius-2); font-size: 0.85rem; color:white;">
                                     <?php echo strtoupper($user['role']); ?>
                                 </span>
                             </td>            

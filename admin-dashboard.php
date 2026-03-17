@@ -140,7 +140,7 @@ $allPosts = $conn->query("SELECT p.*, u.full_name as author_name, c.name as cate
                                     <?php echo htmlspecialchars($post['title']); ?>
                                 </a>
                                 <?php if ($post['is_featured']): ?>
-                                    <span style="background: var(--color-green); padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.7rem; margin-left: 0.5rem;">FEATURED</span>
+                                    <span style="background: var(--color-green); padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.8rem; margin-left: 0.5rem;">FEATURED</span>
                                 <?php endif; ?>
                             </td>
                             <td><?php echo htmlspecialchars($post['author_name']); ?></td>

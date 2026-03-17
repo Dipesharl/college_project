@@ -24,6 +24,7 @@
             border-radius: var(--card-border-radius-2);
             text-align: center;
             transition: var(--transition);
+            color:white;
         }
         .service-card:hover {
             transform: translateY(-5px);
